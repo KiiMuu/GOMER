@@ -1,0 +1,87 @@
+
+/* Start Responsive Style with Media Queries */
+
+/* Upper bar Section */
+
+@media ( max-width: 640px ) {
+    .upper-bar {
+        .links, .social-links {
+            text-align: center !important;
+        }
+    }
+}
+
+/* Start Header */
+
+@media ( max-width: 640px ) {
+    .header {
+        h2 {
+            font-size: 30px !important;
+        }
+        button {
+            width: 125px;
+            height: 38px;
+            font-size: 12px;
+        }
+    }
+}
+
+/* Start Quote */
+
+
+@media ( max-width: 640px ) {
+    .quote {
+        height: 220px;
+        .sentence p {
+            font-size: 23px;
+        }
+    }
+}
+
+
+/* Start Build */
+
+@media ( max-width: 550px ) {
+    .features {
+        height: 450px !important;
+    }
+}
+
+
+/* Start Question Section */
+
+@media ( max-width: 960px ) {
+    .question-btn, .question-heading, .question-heading h3 {
+        text-align: center !important;
+    }
+}
+
+
+/* Contact Us Section */
+
+@media ( max-width: 1200px ) {
+    .contact-us {
+        .contact-inputs {
+            .location-info {
+                i {
+                    margin-top: 0;
+                }
+            }
+            .textarea {
+                margin-top: 22px;
+            }
+        }
+    }
+}
+
+
+/* Start Footer */
+
+
+@media ( max-width: 960px ) {
+    .copyright {
+        .designer, .social-icons {
+            text-align: center !important;
+        }
+    }
+}

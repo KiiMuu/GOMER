@@ -1,0 +1,32 @@
+// Overlay Mixin;
+
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// Common Buttons Style
+
+@mixin btn-style {
+    width: 150px;
+    height: 46px;
+    border: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    @include prefixer(border-radius, 2px, ms webkit moz o);
+}
+
+// Prefixer Mixin
+
+@mixin prefixer( $property, $value, $prefixes: () ) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property} : $value;
+    }
+    #{$property} : $value;
+}
